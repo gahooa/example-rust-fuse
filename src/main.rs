@@ -155,6 +155,8 @@ impl Filesystem for HelloFS {
                     (2, FileType::RegularFile, "hello.txt"),
                     (4, FileType::RegularFile, "hello2.txt"),
                     (3, FileType::Directory, "empty_dir"),
+                    (3, FileType::Directory, "empty_dir_alias"),
+                    (3, FileType::Directory, "empty_dir_alias2"),
                 ];    
         
                 for (i, entry) in entries.into_iter().enumerate().skip(offset as usize) {
